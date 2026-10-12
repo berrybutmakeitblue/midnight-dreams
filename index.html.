@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Dreams</title>
+
+    <style>
+        body {
+            background: #100d1c;
+            color: #f3e8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            color: #c4a1ff;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: #d8cde8;
+            line-height: 1.8;
+        }
+
+        button {
+            background: #a879e8;
+            color: #100d1c;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 22px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>☾ Midnight Dreams ✨</h1>
+
+    <p>A little corner of the universe, made by me.</p>
+
+    <p>Dream quietly. Build boldly.</p>
+
+    <button onclick="showMessage()">Click for a surprise</button>
+
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "You are creating something wonderful! 🌙";
+        }
+    </script>
+</body>
+</html>
