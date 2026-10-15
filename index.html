@@ -4,15 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midnight Dreams</title>
+    <title>Midnight Dreams | Elyxra</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
+            padding: 40px 20px;
             background: #100d1c;
             color: #f3e8ff;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         h1 {
@@ -20,9 +30,30 @@
             font-size: 2.5rem;
         }
 
+        h2 {
+            color: #c4a1ff;
+        }
+
         p {
             color: #d8cde8;
             line-height: 1.8;
+        }
+
+        .avatar {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #a879e8;
+            box-shadow: 0 0 25px #8653c866;
+        }
+
+        .card {
+            margin-top: 28px;
+            padding: 25px;
+            background: #1c162b;
+            border: 1px solid #45345e;
+            border-radius: 20px;
         }
 
         button {
@@ -34,25 +65,88 @@
             font-size: 16px;
             cursor: pointer;
         }
+
+        button:hover {
+            background: #c4a1ff;
+        }
+
+        #message {
+            color: #c4a1ff;
+            margin-top: 18px;
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #9d8bb7;
+            font-size: 14px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>☾ Midnight Dreams ✨</h1>
+    <main class="container">
 
-    <p>A little corner of the universe, made by me.</p>
+        <h1>☾ Midnight Dreams ✨</h1>
+        <p>A little corner of the universe, made by me.</p>
 
-    <p>Dream quietly. Build boldly.</p>
+        <section class="card">
+            <img
+                class="avatar"
+                src="elyxra-avatar.png"
+                alt="Elyxra's illustrated avatar"
+            >
 
-    <button onclick="showMessage()">Click for a surprise</button>
+            <h2>Hi, I'm Elyxra 🦋</h2>
 
-    <p id="message"></p>
+            <p>
+                Good vibes. Deep thoughts. Endless dreams.
+            </p>
+
+            <p>
+                I'm talkative, cool, and always up for a good
+                conversation. I enjoy meeting new people, sharing
+                laughs, and bringing positive energy wherever I go.
+            </p>
+
+            <p>
+                When I'm not chatting, you'll probably find me
+                reading novels, writing my own stories, or putting
+                my thoughts into poetry. I love creativity,
+                technology, astronomy, and discovering new things.
+            </p>
+
+            <p>
+                I'm always dreaming, learning, and becoming
+                a better version of myself.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>🌙 A Little Reminder</h2>
+
+            <p>
+                Dream quietly. Build boldly.
+            </p>
+
+            <button onclick="showMessage()">
+                Click for a surprise ✨
+            </button>
+
+            <p id="message"></p>
+        </section>
+
+        <footer>
+            Made with 💜 by Elyxra
+        </footer>
+
+    </main>
 
     <script>
         function showMessage() {
             document.getElementById("message").textContent =
-                "You are creating something wonderful! 🌙";
+                "Keep dreaming, keep creating, and never stop being you! 🌙💜";
         }
     </script>
 </body>
-</html>
+    </html>
+    
